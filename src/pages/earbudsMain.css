@@ -1,0 +1,191 @@
+main{
+    width: 100%;
+    display: flex;
+}
+.back{
+    position: absolute;
+    width: 100vw;
+    margin-top: 52px;
+    margin-bottom: 7px;
+    z-index: 0;
+}
+.back a{
+    display: flex;
+    padding-left: 26px;
+}
+
+.back p{
+    margin-left: 20px;
+}
+
+.earbudsViews{
+    width: 54px;
+    margin: 142px 37px 142px 65px ;
+}
+.earbudsViews button {
+    background-color: transparent;
+    border-radius: 100%;
+    border: 1px solid var(--building-color4);
+    width: 54px;
+    height:54px ;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 19px;
+    cursor: pointer;
+}
+
+.earbudsViews img{
+    width: 61px;
+    margin: auto;
+}
+
+.earbudsProducto{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 79px;
+}
+
+.imagenProducto {
+    width: 735px !important;
+    height: 518px;
+    background-color: var(--building-color2);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    transition: 0.2s;
+}
+.imagenProducto img {
+    width: 528px;
+}
+.producto{
+    width: 40%;
+    transition: 0.4s;
+}
+.modeloProducto {
+    margin: 0 26px 125px 24px;
+}
+
+.modeloProducto p{
+    margin-bottom: 24px;
+}
+.modeloColor{
+    display: flex;
+    gap: 9px;
+    max-width: 300px;
+}
+#colorAzul{
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--building-color4);
+    border-radius: 100px;
+    background-color: #9EC6EA;
+    cursor: pointer;
+}
+
+#colorBeige{
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--building-color4);
+    border-radius: 100px;
+    background-color: #E7E3E0;
+    cursor: pointer;
+}
+
+#colorNegro{
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--building-color4);
+    border-radius: 100px;
+    background-color: #353A49;
+    cursor: pointer;
+}
+
+#colorGris{
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--building-color4);
+    border-radius: 100px;
+    background-color: #D1D7DA;
+    cursor: pointer;
+}
+
+#colorVerde{
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--building-color4);
+    border-radius: 100px;
+    background-color: #DFE6B6;
+    cursor: pointer;
+}
+#colorTerracota{
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--building-color4);
+    border-radius: 100px;
+    background-color: #E08571;
+    cursor: pointer;
+}
+
+.modeloCompra{
+    margin-left: auto;
+    background-color: var(--building-color2);
+    border-radius: 10px;
+    width: 80%;
+    padding: 29px 24px;
+    margin-bottom: 30px;
+    transition: 0.2s
+    
+        
+}
+.compraAñadir{
+    display: flex;
+    gap: 9px;
+}
+
+select {
+    width: 95px;
+    height: 64px;
+    border-radius: 10px;
+    border: 1px solid var(--building-color4);
+    background-color: var(--building-color1);
+    background-image: url(src\assets\img\icons\Quantity-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: 70px center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    color: var(--building-color4);
+    font-size: 12px;
+    font-weight: bold;
+    padding-left: 20px;
+    
+}
+
+
+button{
+    flex-grow: 1;
+    width: auto;
+    height: 64px;
+    border-radius: 7px;
+    border: none;
+    background-color: var(--building-color5);
+    color: var(--building-color1);
+    font-weight: bold;
+
+}
+
+.modeloEnvío{
+    display: flex;
+    gap:4px;
+    margin-top: 61px;
+    font-weight: bold;
+}
+
+.modeloEnvío span{
+    color: var(--building-color5);
+}
