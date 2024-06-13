@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './earbudsMain.css';
-import EarbudsProduct from './MainMolecules/EarbudsProducto';
-import EarbudsViews from './MainMolecules/EarbudsViews';
+import EarbudsProduct from '../components/EarbudsProducto';
+import EarbudsViews from '../components/EarbudsViews';
 
 const EarbudsMain = () => {
 const [selectedColor, setSelectedColor] = useState('celeste');

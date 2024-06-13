@@ -2,13 +2,13 @@ import React from 'react';
 import './App.css';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
-import EarbudsMain from './components/Main/EarbudsMain';
+// import EarbudsMain from './pages/EarbudsMain';
 
 function App() {
   return (
     <div>
       <NavBar />
-      <EarbudsMain />
+      {/* <EarbudsMain /> */}
       <Footer />
     </div>
   );
