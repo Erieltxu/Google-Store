@@ -1,10 +1,9 @@
 import React from 'react'
 
-export default function CartMain() {
+const CartMain = () => {
     return (
-    <div>
-        <h2>Cart Main Section</h2>
-        <p>Aquí va el Main</p>
-    </div>
+        <></>
     )
 }
+
+export default CartMain

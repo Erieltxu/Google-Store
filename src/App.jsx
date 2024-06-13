@@ -1,18 +1,17 @@
-import { useState } from 'react'
-import './App.css'
-import NavBar from './components/NavBar'
-import Footer from './components/Footer'
-
+import React from 'react';
+import './App.css';
+import NavBar from './components/NavBar';
+import Footer from './components/Footer';
+import EarbudsMain from './components/Main/EarbudsMain';
 
 function App() {
-  
-
   return (
     <div>
-      <NavBar></NavBar>
-      <Footer></Footer>
+      <NavBar />
+      <EarbudsMain />
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
