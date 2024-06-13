@@ -1,0 +1,87 @@
+main{
+
+    width: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    
+    }
+    
+    .back{
+    
+    position: absolute;
+    width: 100vw;
+    margin-top: 52px;
+    margin-bottom: 7px;
+    
+    }
+    
+    .back a{
+    
+    display: flex;
+    padding-left: 26px;
+    
+    }
+    
+      
+    
+    .back p{
+    
+    margin-left: 20px;
+    
+    }
+       
+    
+    
+    .smartwatchProducto{
+    
+    display: flex;
+    justify-content: space-between;
+    
+    }
+      
+    .imagenProducto {
+
+        width: 750vw!important;
+        max-width: 865px;
+        height: 518px;
+        background-color: var(--building-color2);
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 79px;
+        margin-left: 50px;
+        
+        }
+    
+   
+    
+    
+    .modeloProducto p{
+       margin: 0 26px 88px 24px;
+       margin-bottom: 24px;
+    
+    }
+
+    
+   
+    
+      
+    
+    button{
+    
+    flex-grow: 1;
+    width: auto;
+    height: 64px;
+    border-radius: 7px;
+    border: none;
+    background-color: var(--building-color5);
+    color: var(--building-color1);
+    font-weight: bold;
+    
+      
+    
+    }
+    
+    
