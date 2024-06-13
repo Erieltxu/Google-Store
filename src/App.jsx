@@ -7,15 +7,12 @@ import CartMain from './components/Main/CartMain'
 
 
 function App() {
-  
-
   return (
     <div>
       <NavBar></NavBar>
-      <CartMain></CartMain>
       <Footer></Footer>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
