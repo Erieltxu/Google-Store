@@ -1,0 +1,194 @@
+/* General styles */
+header {
+    width: 100%;
+    height: 56px;
+    color: var(--building-color4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+}
+
+.headerLogo {
+    width: 24px;
+    height: 24px;
+    margin: 0 0 0 24px;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--building-color4);
+    margin: 0 0 0 24px;
+    transition: 0.4s;
+}
+
+header a:hover {
+    color: var(--building-color5);
+}
+
+header a:hover svg {
+    fill: var(--building-color5);
+}
+
+.headerNav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerMenu {
+    display: flex;
+    align-items: center;
+}
+
+.menuIcons {
+    display: flex;
+    align-items: center;
+}
+
+.menuIcons a {
+    margin: 0 23px 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.hamburger-menu {
+    display: none; 
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 56px; 
+    left: 0;
+    width: 100%;
+    background-color: var(--building-color1);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.menu:hover {
+    color: var(--building-color5);
+}
+
+.linea {
+    margin: 0;
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background: linear-gradient(0deg, #353a4900 0%, #353a4967 100%);
+    height: 5px;
+    border: none;
+}
+
+.menuIcons .menuIcon {
+    display: none;
+}
+
+
+.menuIcons a:hover svg,
+.menuIcons a:hover img {
+    fill: var(--building-color5); 
+    filter: invert(29%) sepia(100%) saturate(1360%) hue-rotate(182deg) brightness(95%) contrast(91%); 
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width: 992px) {
+    header{
+        box-shadow: 0 5px 5px #57626b56;
+    }
+    .menuIcons img {
+        width: 20px;
+    }
+
+    .menuIcons a {
+        margin: 0 20px 0 0;
+    }
+
+    .linea {
+        display: none;
+    }
+}
+
+/* Mostrar ícono de menú solo en pantallas pequeñas */
+@media screen and (max-width: 736px) {
+  
+    .watches, .phones, .earbuds, .smart-home, .accessories, .subscriptions {
+        display: none;
+    }
+    
+    header {
+        box-shadow: 0 5px 5px #57626b56;
+        background-color: var(--building-color1);
+        position: fixed;
+        width: 100%;
+    }
+
+    .headerNav {
+        justify-content: end;
+        flex-direction: row-reverse;
+        margin-right: 20px;
+    }
+
+    .headerLogo {
+        margin-left: 24px; 
+    }
+
+    .menuIcon {
+        display: block;
+        cursor: pointer; 
+    }
+
+    .menuIcons .menuIcon {
+        display: block;
+    }
+
+    .menuIcon:hover {
+        filter: invert(29%) sepia(100%) saturate(1360%) hue-rotate(182deg) brightness(95%) contrast(91%);
+    }
+
+    .dropdownMenu {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--building-color1);
+        position: absolute;
+        top: 56px; 
+        left: 0; 
+        width: 100%; 
+        border: 1px solid var(--building-color4);
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    .dropdownMenu a {
+        padding: 10px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none; 
+    }
+
+    .dropdownMenu a:hover {
+        background-color: #F8F9FA;
+        color: var(--building-color4); 
+    }
+
+    .linea {
+        border-top: 1px solid var(--building-color4);
+        margin-top: 10px;
+    }
+    
+    .headerGoogle {
+        display: block; 
+        position: absolute; 
+        top: 15px;
+        left: 24px; 
+    }
+}
+
+
+@media screen and (min-width: 737px) {
+    .menuIcon {
+        display: none;
+    }
+}
