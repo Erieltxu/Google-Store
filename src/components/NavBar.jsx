@@ -6,6 +6,20 @@ const NavBar = ({ handleSectionClick }) => {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+    const menuIcon = document.getElementById('menuBtn');
+    menuIcon.addEventListener('mouseenter', function() {
+      const rects = menuIcon.getElementsByTagName('rect');
+      for (let rect of rects) {
+        rect.setAttribute('fill', 'blue');
+      }
+    });
+    
+    menuIcon.addEventListener('mouseleave', function() {
+      const rects = menuIcon.getElementsByTagName('rect');
+      for (let rect of rects) {
+        rect.setAttribute('fill', '#5F6368');
+      }
+    });
   };
 
   return (
@@ -16,63 +30,55 @@ const NavBar = ({ handleSectionClick }) => {
             <div className="headerGoogle">
               <img
                 className="headerLogo"
-                src="src\assets\img\icons\google-logo.png"
+                src="src/assets/img/icons/google-logo.png"
                 alt="Logo de Google"
               />
             </div>
-            <a>Phones</a>
-            <a onClick={() => handleSectionClick('earbuds')}>Earbuds</a>
-            <a onClick={() => handleSectionClick('watches')}>Watches</a>
-            <a>Smart Home</a>
-            <a>Accessories</a>
-            <a>Subscriptions</a>
+            <a class="phones">Phones</a>
+            <a class="earbuds" href="/https://www.youtube.com/watch?v=mBYSUUnMt9M&ab_channel=freeCodeCampEspa%C3%B1ol">Earbuds</a>
+            <a class="watches" href="https://www.youtube.com/watch?v=mBYSUUnMt9M&ab_channel=freeCodeCampEspa%C3%B1ol">Watches</a>
+            <a class="smart-home">Smart Home</a>
+            <a class="accessories"> Accessories</a>
+
           </div>
           <div className="menuIcons">
             <a href="#">
               <img
-                src="src\assets\img\icons\Search.svg"
+                src="src/assets/img/icons/Search.svg"
                 alt="Icono de búsqueda"
               />
             </a>
             <a href="#">
-              <img src="src\assets\img\icons\Help.svg" alt="Icono de ayuda" />
+              <img src="src/assets/img/icons/Help.svg" alt="Icono de ayuda" />
             </a>
             <a onClick={() => handleSectionClick('earbuds')}>
-              <img src="src\assets\img\icons\Cart.svg" alt="Icono del carrito" />
+              <img src="src/assets/img/icons/Cart.svg" alt="Icono del carrito" />
             </a>
             <a href="#">
-              <img src="src\assets\img\icons\Avatar.svg" alt="Icono de avatar" />
+              <img src="src/assets/img/icons/Avatar.svg" alt="Icono de avatar" />
             </a>
-            <div className="hamburger-menu" onClick={toggleMenu}>
-              {/* SVG del menú hamburguesa */}
-              <svg
-                className="hamburger-icon"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                width="24"
-                height="24"
-              >
-                <path
-                  fill="currentColor"
-                  d="M21 18H3v-2h18v2zm0-5H3v-2h18v2zm0-7H3V4h18v2z"
-                />
-              </svg>
+            {/* Ícono de menú para pantallas pequeñas */}
+            <div className="menuContainer">
+              <div className="menuIcon" onClick={toggleMenu}>
+                <img src="src/assets/img/icons/Menu.svg" alt="Menú" id="menuBtn" class="menuIcon"/>
+              </div>
+              {/* Mostrar dropdownMenu solo si isMenuOpen es true */}
+              {isMenuOpen && (
+                <div className="dropdownMenu" id="dropdownMenu">
+                  <a>Phones</a>
+                  <a href="https://www.youtube.com/watch?v=mBYSUUnMt9M&ab_channel=freeCodeCampEspa%C3%B1ol">Earbuds</a>
+                  <a href="https://www.youtube.com/watch?v=mBYSUUnMt9M&ab_channel=freeCodeCampEspa%C3%B1ol">Watches</a>
+                  <a>Smart Home</a>
+                  <a>Accessories</a>
+                  <a>Subscriptions</a>
+                </div>
+              )}
             </div>
           </div>
         </nav>
       </header>
       <hr className="linea"></hr>
-      {/* Aquí va el menú desplegable para móviles */}
-      {isMenuOpen && (
-        <div className="mobile-menu">
-          <a>Phones</a>
-          <a onClick={() => handleSectionClick('earbuds')}>Earbuds</a>
-          <a onClick={() => handleSectionClick('watches')}>Watches</a>
-          <a>Smart Home</a>
-          <a>Accessories</a>
-          <a>Subscriptions</a>
-        </div>
-      )}
+      
     </>
   );
 };

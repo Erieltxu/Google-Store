@@ -61,3 +61,67 @@ footer a{
 .spain a{
     font-size: 12px;
 }
+@media screen and (max-width:992px){
+    footer{
+        width: 100%;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: auto;
+        padding-bottom: 10px;
+        background-color: var(--building-color2);
+    }
+    .redes-sociales{
+        margin-left: 20px;
+    }
+    .redes-sociales img{
+        height: 13px;
+    }
+    .privacy{
+        margin-left: 0;
+        gap: 10px
+    }
+
+}
+@media screen and (max-width:736px){
+    footer{
+        width: 100%;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: auto;
+        padding-bottom: 10px;
+        background-color: var(--building-color2);
+    }
+   
+    .footerContent{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding-top: 10px;
+    }
+        
+        .redes-sociales{
+            width: 80%;
+            display:flex;
+        }
+        .redes-sociales img{
+            height: 30px;
+            margin-right: 35px;
+        }
+        .privacy{
+            flex-direction: column;
+            line-height: 0;
+            margin-top: 25px;
+            gap: 15px;
+        }
+        
+    .spain{
+        flex-direction: row-reverse;
+        order: 10;
+        line-height: 8px;
+        margin-bottom: 10px;
+    }
+}
