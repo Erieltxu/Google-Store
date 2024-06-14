@@ -1,10 +1,23 @@
-import React from 'react'
+import React from 'react';
 
-export default function WatchesMain() {
+import Navbar from '../components/NavBar';
+import Footer from '../components/Footer';
+import './WatchesMain.css';
+import WatchesProducto from '../components/WatchesProducto';
+
+
+const WatchesMain = () => {
     return (
-    <div>
-        <h2>Watches Main Section</h2>
-        <p>Aquí va el Main</p>
-    </div>
-    )
-}
+<>
+<Navbar></Navbar>
+    <main>  
+        <WatchesProducto></WatchesProducto>
+
+   </main>
+<Footer></Footer>
+</>
+
+    );
+};
+
+export default WatchesMain;
