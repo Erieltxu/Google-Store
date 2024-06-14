@@ -30,15 +30,15 @@ const NavBar = ({ handleSectionClick }) => {
             <div className="headerGoogle">
               <img
                 className="headerLogo"
-                src="src/assets/img/icons/google-logo.png"
+                src="src\assets\img\icons\google-logo.png"
                 alt="Logo de Google"
               />
             </div>
-            <a class="phones">Phones</a>
-            <a class="earbuds" href="/https://www.youtube.com/watch?v=mBYSUUnMt9M&ab_channel=freeCodeCampEspa%C3%B1ol">Earbuds</a>
-            <a class="watches" href="https://www.youtube.com/watch?v=mBYSUUnMt9M&ab_channel=freeCodeCampEspa%C3%B1ol">Watches</a>
-            <a class="smart-home">Smart Home</a>
-            <a class="accessories"> Accessories</a>
+            <a className="phones">Phones</a>
+            <a className="earbuds" href="/https://www.youtube.com/watch?v=mBYSUUnMt9M&ab_channel=freeCodeCampEspa%C3%B1ol">Earbuds</a>
+            <a className="watches" href="https://www.youtube.com/watch?v=mBYSUUnMt9M&ab_channel=freeCodeCampEspa%C3%B1ol">Watches</a>
+            <a className="smart-home">Smart Home</a>
+            <a className="accessories"> Accessories</a>
 
           </div>
           <div className="menuIcons">
@@ -49,7 +49,7 @@ const NavBar = ({ handleSectionClick }) => {
               />
             </a>
             <a href="#">
-              <img src="src/assets/img/icons/Help.svg" alt="Icono de ayuda" />
+              <img src="src\assets\img\icons\Help.svg" alt="Icono de ayuda" />
             </a>
             <a onClick={() => handleSectionClick('earbuds')}>
               <img src="src/assets/img/icons/Cart.svg" alt="Icono del carrito" />
@@ -60,7 +60,7 @@ const NavBar = ({ handleSectionClick }) => {
             {/* Ícono de menú para pantallas pequeñas */}
             <div className="menuContainer">
               <div className="menuIcon" onClick={toggleMenu}>
-                <img src="src/assets/img/icons/Menu.svg" alt="Menú" id="menuBtn" class="menuIcon"/>
+                <img src="src/assets/img/icons/Menu.svg" alt="Menú" id="menuBtn" className="menuIcon"/>
               </div>
               {/* Mostrar dropdownMenu solo si isMenuOpen es true */}
               {isMenuOpen && (
