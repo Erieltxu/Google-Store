@@ -102,7 +102,9 @@ footer a{
         height: auto;
         padding-top: 10px;
     }
-        
+    body {
+        padding-bottom: 150px; /* Ajusta este valor según sea necesario */
+    }
         .redes-sociales{
             width: 80%;
             display:flex;
