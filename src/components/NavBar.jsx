@@ -34,11 +34,11 @@ const NavBar = ({ handleSectionClick }) => {
                 alt="Logo de Google"
               />
             </div>
-            <a className="phones">Phones</a>
-            <a className="earbuds" href="/https://www.youtube.com/watch?v=mBYSUUnMt9M&ab_channel=freeCodeCampEspa%C3%B1ol">Earbuds</a>
-            <a className="watches" href="https://www.youtube.com/watch?v=mBYSUUnMt9M&ab_channel=freeCodeCampEspa%C3%B1ol">Watches</a>
-            <a className="smart-home">Smart Home</a>
-            <a className="accessories"> Accessories</a>
+            <a class="phones">Phones</a>
+            <a class="earbuds" href="src\pages\EarbudsMain.jsx">Earbuds</a>
+            <a class="watches" href="src\pages\WatchesMain.jsx">Watches</a>
+            <a class="smart-home">Smart Home</a>
+            <a class="accessories"> Accessories</a>
 
           </div>
           <div className="menuIcons">
@@ -66,8 +66,8 @@ const NavBar = ({ handleSectionClick }) => {
               {isMenuOpen && (
                 <div className="dropdownMenu" id="dropdownMenu">
                   <a>Phones</a>
-                  <a href="https://www.youtube.com/watch?v=mBYSUUnMt9M&ab_channel=freeCodeCampEspa%C3%B1ol">Earbuds</a>
-                  <a href="https://www.youtube.com/watch?v=mBYSUUnMt9M&ab_channel=freeCodeCampEspa%C3%B1ol">Watches</a>
+                  <a href="src\pages\EarbudsMain.jsx">Earbuds</a>
+                  <a href="src\pages\WatchesMain.jsx">Watches</a>
                   <a>Smart Home</a>
                   <a>Accessories</a>
                   <a>Subscriptions</a>
