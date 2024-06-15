@@ -1,22 +1,21 @@
-import React, {useState} from "react";
-import ColorButton from "./ColorButton";
-
+import React from 'react';
+import ColorButton from './ColorButton';
 
 const EarbudsProduct = ({ selectedColor, selectedImage, handleColorChange }) => {
-    const colors = ["celeste", "beige", "negro", "gris", "verde", "terracota"];
+    const colors = ["celeste", "porcelana", "carbon", "gris", "verde", "coral"];
     const colorMap = {
         celeste: '#9EC6EA',
-        beige: '#E7E3E0',
-        negro: '#353A49',
+        porcelana: '#E7E3E0',
+        carbon: '#353A49',
         gris: '#D1D7DA',
         verde: '#DFE6B6',
-        terracota: '#E08571'
+        coral: '#E08571'
     };
 
     return (
         <section className="earbudsProducto">
             <div className="imagenProducto">
-                <img src={`src/assets/img/earbuds/caja/${selectedImage}.png`} alt="Foto del estuche de los Earbuds" />
+                <img src={selectedImage} alt="Foto del estuche de los Earbuds" />
             </div>
             <div className="producto">
                 <div className="modeloProducto">
