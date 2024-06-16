@@ -31,7 +31,7 @@ const NavBar = ({ handleSectionClick }) => {
             <div className="headerGoogle">
               <img
                 className="headerLogo"
-                src="src/assets/img/icons/google-logo.png"
+                src="src\assets\img\icons\google-logo.png"
                 alt="Logo de Google"
               />
             </div>
@@ -50,7 +50,7 @@ const NavBar = ({ handleSectionClick }) => {
               />
             </a>
             <a href="#">
-              <img src="src/assets/img/icons/Help.svg" alt="Icono de ayuda" />
+              <img src="src\assets\img\icons\Help.svg" alt="Icono de ayuda" />
             </a>
             <a onClick={() => handleSectionClick('earbuds')} href="/buys">
               <img src="src/assets/img/icons/Cart.svg" alt="Icono del carrito" />
@@ -61,7 +61,7 @@ const NavBar = ({ handleSectionClick }) => {
             {/* Ícono de menú para pantallas pequeñas */}
             <div className="menuContainer">
               <div className="menuIcon" onClick={toggleMenu}>
-                <img src="src/assets/img/icons/Menu.svg" alt="Menú" id="menuBtn" class="menuIcon"/>
+                <img src="src/assets/img/icons/Menu.svg" alt="Menú" id="menuBtn" className="menuIcon"/>
               </div>
               {/* Mostrar dropdownMenu solo si isMenuOpen es true */}
               {isMenuOpen && (

@@ -20,6 +20,7 @@ header a {
     color: var(--building-color4);
     margin: 0 0 0 24px;
     transition: 0.4s;
+    cursor: pointer;
 }
 
 header a:hover {
