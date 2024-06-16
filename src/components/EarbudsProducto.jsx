@@ -14,7 +14,7 @@ const EarbudsProduct = ({ selectedColor, selectedImage, handleColorChange }) => 
 
     return (
         <section className="earbudsProducto">
-            <a href='/next'> Ir </a>
+            
             <div className="imagenProducto">
                 <img src={selectedImage} alt="Foto del estuche de los Earbuds" />
             </div>

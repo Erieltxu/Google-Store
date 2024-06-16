@@ -52,7 +52,7 @@ const NavBar = ({ handleSectionClick }) => {
             <a href="#">
               <img src="src\assets\img\icons\Help.svg" alt="Icono de ayuda" />
             </a>
-            <a onClick={() => handleSectionClick('earbuds')} href="/buys">
+            <a onClick={() => handleSectionClick('earbuds')} href="/cart">
               <img src="src/assets/img/icons/Cart.svg" alt="Icono del carrito" />
             </a>
             <a href="#">

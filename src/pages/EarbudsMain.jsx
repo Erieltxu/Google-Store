@@ -25,11 +25,12 @@ const EarbudsMain = () => {
 
     return (
         <>
-            <NavBar />
-            <main>
+            
+            
                 <section className="back">
                     <a href="#">
                         <img src="src/assets/img/icons/Arrow.svg" alt="Arrow icon" />
+                       
                         <p>See product details</p>
                     </a>
                 </section>
@@ -42,8 +43,8 @@ const EarbudsMain = () => {
                     selectedImage={getSelectedImage()}
                     handleColorChange={handleColorChange}
                 />
-            </main>
-            <Footer />
+            
+            
         </>
     );
 };
