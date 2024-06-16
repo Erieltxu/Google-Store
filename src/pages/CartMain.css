@@ -1,19 +1,67 @@
 
-    
-    
+.cartmain{
+    margin:3%;
+    padding: 0 5% 5%;
+    height: 100%;
+}
+.title{
+    text-align: center;
+    margin: auto;
+    margin: 0 auto;
+   
+}
 
-.modeloCompra{
-
-    margin: 0 0 26px auto;
+.imagenProducto{
+   position:relative;
     background-color: var(--building-color2);
     border-radius: 10px;
-    padding: 29px 24px;
+    padding: 39px 24px;
     margin-top :5%;
-    display: flex;
+    display:flex;
     flex-direction: column;
     justify-content: space-between;
     width:476px;
-    height: 394px;
+    height: 150px; 
+   
+  
+}
+.Descripcion{
+    justify-content: center;
+    height: 30%;
+    margin-left: 25%;
+    margin-top: -20%;
+}
+.Producto{
+    width: 118px;
+    height: 88px;
+    display: flex;
+    justify-content:center;
+}
+  .IconEnvíos{
+    
+    margin-left: 25%;
+    margin-top: 20%;
+    height: 37px;
+    width: 300px;
+    background-color: white;
+    
+  } 
+    
+
+.modeloCompra{
+    position:relative;
+    background-color: var(--building-color2);
+    border-radius: 10px;
+    padding: 29px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:376px;
+    height: 284px;
+    margin-left:10% ;
+    margin: 0 0 26px auto;
+    margin-top: -20%;
+   
     
     
    
@@ -40,22 +88,6 @@
     }
     
       
-    
-    /* input {
-    
-    width: 95px;
-    height: 60px;
-    border-radius: 10px;
-    border: 1px solid var(--building-color4);
-    color: var(--building-color4);
-    font-size: 12px;
-    font-weight: bold;
-    padding-left: 20px;
-    
-    } */
-    
-      
-    
     button{
     
     flex-grow: 1;

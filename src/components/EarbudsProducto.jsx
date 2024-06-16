@@ -1,9 +1,11 @@
 import React from "react";
 import ColorButton from "./ColorButton";
 
+
 const EarbudsProduct = ({ selectedColor, selectedImage, handleColorChange }) => {
     return (
         <section className="earbudsProducto">
+            <a href='/next'> Ir </a>
             <div className="imagenProducto">
                 <img src={`src/assets/img/earbuds/caja/${selectedImage}.png`} alt="Foto del estuche de los Earbuds" />
             </div>
@@ -32,7 +34,7 @@ const EarbudsProduct = ({ selectedColor, selectedImage, handleColorChange }) => 
                     <option value="1">1</option>
                     <option value="2">2</option>
                     </select>
-                    <button>Add to Cart</button>
+                    <a href='/cart'><button>Add to Cart</button></a>
                 </div>
                 
                 <div className="modeloEnvío">
@@ -40,6 +42,7 @@ const EarbudsProduct = ({ selectedColor, selectedImage, handleColorChange }) => 
                     <p>Delivers  29 Apr to <span>08023</span></p>
                 </div>
                 </div>
+                
             </div>
         </section>
     );

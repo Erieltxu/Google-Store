@@ -25,6 +25,7 @@ body {
 h2{
     font-size: 35px;
     margin-bottom: 24px;
+    
 }
 
 h3 {
@@ -39,3 +40,9 @@ hr {
     border: 1px solid var(--building-color3);
     margin: 32px 0;
 }
+main{
+
+    width: 100%;
+    display: flex;
+    
+    }

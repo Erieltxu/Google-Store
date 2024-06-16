@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './navBar.css';
 
+
 const NavBar = ({ handleSectionClick }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -35,8 +36,8 @@ const NavBar = ({ handleSectionClick }) => {
               />
             </div>
             <a class="phones">Phones</a>
-            <a class="earbuds" href="/https://www.youtube.com/watch?v=mBYSUUnMt9M&ab_channel=freeCodeCampEspa%C3%B1ol">Earbuds</a>
-            <a class="watches" href="https://www.youtube.com/watch?v=mBYSUUnMt9M&ab_channel=freeCodeCampEspa%C3%B1ol">Watches</a>
+            <a class="earbuds" href="/Earbuds">Earbuds</a>
+            <a class="watches" href="/Watches">Watches</a>
             <a class="smart-home">Smart Home</a>
             <a class="accessories"> Accessories</a>
 
@@ -51,7 +52,7 @@ const NavBar = ({ handleSectionClick }) => {
             <a href="#">
               <img src="src/assets/img/icons/Help.svg" alt="Icono de ayuda" />
             </a>
-            <a onClick={() => handleSectionClick('earbuds')}>
+            <a onClick={() => handleSectionClick('earbuds')} href="/buys">
               <img src="src/assets/img/icons/Cart.svg" alt="Icono del carrito" />
             </a>
             <a href="#">
@@ -67,7 +68,7 @@ const NavBar = ({ handleSectionClick }) => {
                 <div className="dropdownMenu" id="dropdownMenu">
                   <a>Phones</a>
                   <a href="https://www.youtube.com/watch?v=mBYSUUnMt9M&ab_channel=freeCodeCampEspa%C3%B1ol">Earbuds</a>
-                  <a href="https://www.youtube.com/watch?v=mBYSUUnMt9M&ab_channel=freeCodeCampEspa%C3%B1ol">Watches</a>
+                  <a href="/">Watches</a>
                   <a>Smart Home</a>
                   <a>Accessories</a>
                   <a>Subscriptions</a>
@@ -82,5 +83,6 @@ const NavBar = ({ handleSectionClick }) => {
     </>
   );
 };
+
 
 export default NavBar;

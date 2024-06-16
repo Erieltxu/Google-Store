@@ -3,7 +3,21 @@ import './CartMain.css'
 
  const CartMain = () => {
     return (
-        <div class="modeloCompra">
+      <div class="cartmain">
+        <a href='/'> Ir home</a>
+      <div class ="title"><h2>Cart</h2>
+           <a>(3 items)</a></div>
+       <div class="imagenProducto">
+      <img  class ="Producto" src="src\assets\img\earbuds\caja\earbuds_01_celeste.png" alt="Foto de reloj"/>
+       <div  class="Descripcion"><p>Google Pixel Buds Pro in light blue</p>
+      <p>Cant<select></select>€</p>
+      <a>remove</a></div>
+
+       <div class="IconEnvíos"><img src="src\assets\img\icons\Delivery.svg" alt="Icono de envíos"/>
+        <p>Delivers  29 Apr to <span>08023</span></p></div></div>
+    
+
+      <div class="modeloCompra">
       <h3>Order Summary</h3>
       <div class = "ticket">
       <p>Subtotal</p>
@@ -18,9 +32,11 @@ import './CartMain.css'
        <p>with 3 monthly installments *</p></div>
      <div class="compraAñadir">
        
-       <button>Complete the puschase</button>
+       <button>Complete the puschase</button></div>
+       
      </div>
      </div>
+     
     )
 }
 export default CartMain

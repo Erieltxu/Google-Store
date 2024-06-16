@@ -1,18 +1,29 @@
-import { useState } from 'react'
+
+import { useState } from 'react';
 import './App.css'
-import NavBar from './components/NavBar'
-import Footer from './components/Footer'
-import CartMain from './components/Main/CartMain'
+import CartMain from './pages/CartMain';
+import EarbudsProduct from './components/EarbudsProducto';
+import Footer from './components/Footer';
+import NavBar from './components/NavBar';
 
 
 
-function App() {
-  return (
-    <div>
-      <NavBar></NavBar>
-      <Footer></Footer>
-    </div>
-  );
+
+
+
+function App () {
+  const [currentPath, setCurrentPath] = useState(window.location.pathname)
+
+ return (
+  <main>
+    <><Footer></Footer><NavBar></NavBar></>
+    {currentPath === '/' && <EarbudsProduct/>}
+    {currentPath === '/cart' && <CartMain/>}
+    {currentPath === '/next' && <CartMain/>}
+    {currentPath === '/Watches' && <CartMain/>}
+    {currentPath === '/Earbuds' && <EarbudsMain/>}
+    {currentPath === '/buys' && <CartMain/>}
+  </main>
+ )
 }
-
 export default App;

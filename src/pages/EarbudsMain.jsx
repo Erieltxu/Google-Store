@@ -29,6 +29,7 @@ return (
             selectedImage={selectedImage}
             handleColorChange={handleColorChange}
         />
+        
         </main>
     );
 };
