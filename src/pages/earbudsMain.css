@@ -131,6 +131,7 @@ main{
 }
 
 .modeloCompra{
+    margin-top: 40px;
     margin-left: auto;
     background-color: var(--building-color2);
     border-radius: 10px;
@@ -184,6 +185,7 @@ cursor: pointer;
     gap:4px;
     margin-top: 61px;
     font-weight: bold;
+    
 }
 
 .modeloEnvío span{

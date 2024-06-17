@@ -2,17 +2,15 @@
 .cartmain{
     margin:3%;
     padding: 0 5% 5%;
-    height: 100%;
+    width: 100%;
 }
 .title{
     text-align: center;
-    margin: auto;
     margin: 0 auto;
-   
 }
 
-.imagenProducto{
-   position:relative;
+.imagenProductoA{
+    position:relative;
     background-color: var(--building-color2);
     border-radius: 10px;
     padding: 39px 24px;
@@ -22,8 +20,7 @@
     justify-content: space-between;
     width:476px;
     height: 150px; 
-   
-  
+
 }
 .Descripcion{
     justify-content: center;
@@ -47,8 +44,12 @@
     
   } 
     
+.remove{
+    color: var(--building-color5);
+    text-decoration:underline;
 
-.modeloCompra{
+}
+.modeloCompraA{
     position:relative;
     background-color: var(--building-color2);
     border-radius: 10px;
@@ -61,12 +62,7 @@
     margin-left:10% ;
     margin: 0 0 26px auto;
     margin-top: -20%;
-   
-    
-    
-   
-    
-    }
+}
     .ticket {
         display: flex;
         flex-direction: column;
@@ -86,8 +82,7 @@
     gap: 9px;
     
     }
-    
-      
+
     button{
     
     flex-grow: 1;
@@ -98,29 +93,27 @@
     background-color: var(--building-color5);
     color: var(--building-color1);
     font-weight: bold;
-    
-      
+
     
     }
     .text {
         color: var(--building-color1);
     }
-      
-    
-    .modeloEnvío{
-    
+
+    .cartSelect{
+        width: 50px;
+        height: 25px;
+        margin-left: 10px;
+        border-radius: 5px;
+}
+    .IconEnvíos{
     display: flex;
     gap:4px;
     margin-top: 61px;
     font-weight: bold;
     
-    }
-    
-      
-    
-    .modeloEnvío span{
-    
-     color: var(--building-color5);
-    
-    }
-    
+}
+.IconEnvíos span{
+    color: var(--building-color5);
+
+}

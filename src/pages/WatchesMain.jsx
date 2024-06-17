@@ -9,8 +9,7 @@ const WatchesMain = () => {
     <main>  
         <WatchesProducto></WatchesProducto>
         
-
-   </main>
+    </main>
 
 
 
